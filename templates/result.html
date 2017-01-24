@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   html = "<html><body>" \
+           "COMPANY NAME is %s.<br> " \
+           "RATING TYPE = %s.<br>" \
+           "RATING      = %s.<br>" \
+           "RATING DATE = %s<br>" \
+           " </body></html>" % (row[0], row[1], row[2], row[3])
+
+    # PRINTING IN TABLE FORMAT
+    html = "<!DOCTYPE html>" \
+           "<html>THIS  IS TABLE for SEARCH STRING from SQL <br><br><body>" \
+           "<table style>" \
+           "<tr>" \
+           "<td>%s</td>&nbsp" \
+           "<td>%s</td>" \
+           "<td>%s</td>" \
+           "<td>%s</td>" \
+           "</tr>" \
+           "</table>" \
+           "</body></html>" % (row[0], row[1], row[2], row[3])
+</body>
+</html>
